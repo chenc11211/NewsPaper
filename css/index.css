@@ -1,0 +1,415 @@
+body,p,h1,h2,h3,h4,h5,h6,ul,li,table,img,div{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+body{
+    font-family: "Microsoft YaHei";
+}
+/*左右浮动*/
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/*清除浮动*/
+.clear::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+}
+/*页面总容器*/
+#container{
+    width: 980px;
+    height: 1386px;
+    box-sizing: border-box;
+    margin: 10px auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    padding: 0 44px;
+}
+/*页眉*/
+#main_header{
+    height: 61px;
+    border-bottom: 2px solid #938e8c;
+    font-family: "SimHei";
+    font-size: 12px;
+}
+/*左上角标签*/
+#main_header .tag{
+    width: 110px;
+    height: 61px;
+    background-color: #d45d5c;
+    color: #ffffff;
+    text-indent: 5px;
+    position: relative;
+}
+#main_header .tag p{
+    position: absolute;
+    bottom: 0;
+}
+
+/*右上角日期*/
+#main_header .time{
+    height: 61px;
+    width: 200px;
+    color: #d45d5c;
+    position: relative;
+}
+#main_header .time p{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+}
+/*主体内容容器*/
+#main_content{
+    box-sizing: border-box;
+    padding: 30px 0;
+}
+/*文章1上部分*/
+#article_1 .part_top{
+    height: 301px;
+}
+/*封面*/
+#article_1 .part_top .cover{
+    width: 641px;
+    height: 301px;
+    overflow: hidden;
+    position: relative;
+}
+#article_1 .part_top .cover img{
+    width: 641px;
+    height: 301px;
+}
+#article_1 .part_top .cover .shadow_left{
+    width: 191px;
+    height: 301px;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: rgba(160, 197, 172, 0.5);
+}
+#article_1 .part_top .cover .shadow_right{
+    width: 191px;
+    height: 301px;
+    position: absolute;
+    top:0;
+    right: 0;
+    background-color: rgba(229, 186, 191, 0.5);
+}
+
+
+/*标题*/
+#article_1 .part_top .title{
+    width: 203px;
+    height: 100%;
+    box-sizing: border-box;
+    border-top: 2px solid #cc8091;
+}
+#article_1 .part_top .title .title_1,#article_1 .part_top .title .title_2{
+    font-size: 24px;
+    color: #000000;
+    text-decoration: underline;
+    /*首字母大写*/
+    text-transform: capitalize;
+    /*使用小型大写字母*/
+    font-variant: small-caps;
+}
+#article_1 .part_top .title .title_3{
+    font-family: "KaiTi";
+    font-size: 12px;
+    color: #676767;
+}
+/*首字母大写*/
+#article_1 .part_top .title .title_3:first-letter{
+    text-transform: capitalize;
+}
+#article_1 .part_top .title .title_4{
+    font-family: "Microsoft YaHei";
+    font-size: 116px;
+    color: #75b86b;
+}
+#article_1 .part_top .title .title_bottom{
+    color: #cc8091;
+}
+#article_1 .part_top .title .title_5{
+    font-size: 55px;
+    display: inline-block;
+    vertical-align: baseline;
+}
+#article_1 .part_top .title .title_bottom_small{
+   display: inline-block;
+    vertical-align: baseline;
+}
+
+#article_1 .part_top .title .title_6{
+    font-size: 21px;
+}
+#article_1 .part_top .title .title_7{
+    font-size: 12px;
+}
+
+/*文章1下半部分*/
+#article_1 .part_bottom{
+    margin-top: 30px;
+    font-size: 12px;
+}
+#article_1 .part_bottom>div{
+    width: 215px;
+    margin-right: 20px;
+}
+/*小标题*/
+#article_1 .part_bottom>div h5{
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+#article_1 .part_bottom .content_1 h5{
+    color: #418c59;
+}
+#article_1 .part_bottom .content_2 h5{
+    color: #d2994f;
+}
+#article_1 .part_bottom .content_3 h5{
+    color: #cc7680;
+}
+#article_1 .part_bottom p{
+    padding-top: 10px;
+    line-height: 1.5;
+    color: #231815;
+    opacity: 0.7;
+    filter:alpha(70);
+}
+#article_1 .part_bottom ul{
+    margin-top: 20px;
+}
+#article_1 .part_bottom ul p{
+    text-transform: capitalize;
+    display: inline-block;
+    vertical-align: baseline;
+}
+#article_1 .part_bottom ul span{
+    font-size: 12px;
+    color: #cd4a48;
+    font-style: italic;
+    opacity: 0.7;
+    filter:alpha(70);
+    vertical-align: baseline;
+}
+
+/*文章2*/
+#article_2{
+    margin-top: 20px;
+}
+
+/*文章2左半部分*/
+#article_2 .part_left{
+    width: 415px;
+}
+/*标题*/
+#article_2 .part_left .title{
+    font-family: "SimHei";
+    color: #11456b;
+    border-bottom: 2px solid #11456b;
+    font-weight: bold;
+    padding: 10px 0;
+}
+#article_2 .part_left .title h4{
+    font-size: 42px;
+    text-transform: uppercase;
+}
+/*标题首个单词样式*/
+#article_2 .part_left .title h4 span{
+    font-size: 72px;
+    color: #f5e327;
+    font-style: italic;
+}
+#article_2 .part_left .title p{
+    font-size: 33px;
+}
+/*文章二内容部分*/
+#article_2 .part_left .content{
+    margin-top: 20px;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+    color: #767777;
+    line-height: 1.5;
+}
+#article_2 .part_left .content p{
+    text-indent: 2em;
+}
+#article_2 .part_left .content p:first-child{
+    text-indent: 0;
+}
+/*文章首段首个字符增大，浮动*/
+#article_2 .part_left .content p:first-child:first-letter{
+    font-size: 70px;
+    color: #f5e327;
+    float: left;
+    line-height: 1;
+    margin: 0 5px 5px 0;
+}
+#article_2 .part_left .content img{
+    margin: 20px 0 20px 20px;
+}
+/*文章2右半部分*/
+#article_2 .part_right{
+    width: 458px;
+}
+/*封面*/
+#article_2 .part_right .cover{
+    width: 458px;
+    height: 275px;
+    overflow: hidden;
+    position: relative;
+}
+#article_2 .part_right .cover img{
+    width: 458px;
+    height: 275px;
+}
+#article_2 .part_right .cover div{
+    position: absolute;
+    width: 458px;
+    height: 61px;
+    box-sizing: border-box;
+    padding: 8px 0 8px 40px;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+#article_2 .part_right .cover div h5{
+    font-size: 26px;
+    line-height: 44px;
+    padding: 0 10px;
+    color: #ffffff;
+    border-left: 3px solid #72b16a;
+    display: inline-block;
+    vertical-align: baseline;
+}
+#article_2 .part_right .cover div p{
+    font-size: 12px;
+    color: #72b16a;
+    font-style: italic;
+    display: inline-block;
+    vertical-align: baseline;
+}
+/*目录*/
+#article_2 .part_right .directory{
+    width: 458px;
+    height: 318px;
+    box-sizing: border-box;
+    padding: 20px 20px 0 0;
+    margin-top: 20px;
+    background-color: #eeedd6;
+}
+#article_2 .directory ul{
+    margin-left: 20px;
+}
+#article_2 .directory ul li{
+    color: #5a5b5b;
+    font-family: "SimSun";
+    list-style: inside url("../img/list_style_type.png");
+    padding: 10px 0 10px 10px;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#article_2 .directory ul li p{
+    font-size: 16px;
+    display: inline-block;
+    white-space: nowrap;
+}
+/*内容大引号样式，定位*/
+#article_2 .directory ul li span{
+    position: absolute;
+    font-size: 12px;
+    font-style: italic;
+    right: 0;
+    bottom: 10px;
+    background-color: #eeedd6;
+}
+#article_2 .content_bottom{
+    margin-top: 24px;
+    font-family: SimHei;
+}
+#article_2 .content_bottom .content_bottom_1{
+    display: inline-block;
+    width: 260px;
+    height: 160px;
+    box-sizing: border-box;
+    padding: 37px 10px;
+    background-color: #d45d5c;
+    color: #ffffff;
+}
+#article_2 .content_bottom .content_bottom_1 .num{
+    display: inline-block;
+    height: 86px;
+    line-height: 86px;
+    font-size: 110px;
+    border-right: 2px solid #ffffff;
+    vertical-align: middle;
+}
+#article_2 .content_bottom .content_bottom_1 .info{
+    display: inline-block;
+    width: 175px;
+    vertical-align: middle;
+}
+#article_2 .content_bottom .content_bottom_1 .info>p:nth-child(1),#article_2 .content_bottom .content_bottom_1 .info>p:nth-child(2){
+    text-transform: uppercase;
+    font-size: 21px;
+    font-style: italic;
+}
+#article_2 .content_bottom .content_bottom_1 .info>p:nth-child(3){
+    font-size: 12px;
+}
+#article_2 .content_bottom .content_bottom_2{
+    font-size: 14px;
+    color: #5a5b5b;
+    font-style: italic;
+    display: inline-block;
+    width: 170px;
+    box-sizing: border-box;
+    padding-left: 5px;
+    vertical-align: top;
+}
+#article_2 .content_bottom .content_bottom_2 p{
+    position: relative;
+    text-indent: 3em;
+    padding-top: 20px;
+}
+#article_2 .content_bottom .content_bottom_2 span{
+    position: absolute;
+    font-size: 72px;
+    color: #d45d5c;
+    font-style: normal;
+    text-indent: 0;
+}
+#article_2 .content_bottom .content_bottom_2 span:first-child{
+    top: 0;
+    left:-40px;
+}
+#article_2 .content_bottom .content_bottom_2 span:last-child{
+    right: -40px;
+}
+
+
+/*页脚*/
+#main_footer{
+    height: 61px;
+    border-top: 1px solid #938e8c;
+}
+#main_footer span{
+    font-size: 12px;
+    color: #d45d5c;
+    font-family: SimHei;
+}
+
+
+
+
